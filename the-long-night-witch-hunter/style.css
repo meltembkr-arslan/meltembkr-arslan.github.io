@@ -1,0 +1,42 @@
+:root {
+  --night: #0c0812;
+  --panel: #161021;
+  --line: #2e2340;
+  --ink: #ece3f5;
+  --muted: #b3a6c4;
+  --ember: #f2a54a;
+  --glow: #7be59a;
+  --display: 'IM Fell English SC', 'Iowan Old Style', Georgia, serif;
+  --body: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+  color-scheme: dark;
+}
+html { background: var(--night); }
+body { background: var(--night); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 40rem; margin: 0 auto; padding-block: 3rem 4rem; display: flex; flex-direction: column; gap: 2.75rem; }
+header { display: flex; flex-direction: column; gap: .4rem; border-bottom: 1px solid var(--line); padding-bottom: 2rem;
+  background: radial-gradient(circle at 88% 0%, rgba(242,165,74,.16), rgba(0,0,0,0) 42%); }
+.eyebrow { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--glow); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.1rem, 7vw, 3.2rem); line-height: 1.05; margin: 0; color: var(--ember); text-wrap: balance; }
+h1 span { display: block; font-size: .5em; color: var(--ink); letter-spacing: .3em; margin-top: .35rem; }
+.lead { color: var(--muted); margin: .6rem 0 0; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 1.7rem; margin: 0 0 .8rem; color: var(--ink); text-wrap: balance; }
+h3 { font-size: 1rem; font-weight: 600; margin: 1.2rem 0 .3rem; }
+p { margin: 0 0 .8rem; }
+section { display: flex; flex-direction: column; }
+dl { margin: 0; display: flex; flex-direction: column; gap: 1.1rem; }
+dt { font-weight: 600; }
+dd { margin: .2rem 0 0; color: var(--muted); }
+.contact { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 1.2rem 1.3rem; display: flex; flex-direction: column; gap: .6rem; }
+.mail { font-family: var(--body); font-size: 1.1rem; color: var(--ember); word-break: break-all; user-select: all; }
+button { align-self: flex-start; font: inherit; font-size: .9rem; color: var(--night); background: var(--ember); border: 0; border-radius: 4px; padding: .45rem .9rem; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--glow); outline-offset: 2px; }
+a { color: var(--ember); }
+ul { margin: 0 0 .8rem; padding-left: 1.2rem; }
+li { margin-bottom: .3rem; }
+.small { font-size: .9rem; color: var(--muted); }
+footer { border-top: 1px solid var(--line); padding-top: 1.2rem; font-size: .9rem; color: var(--muted); }
+header img { width: 96px; height: 96px; border-radius: 22px; margin-bottom: .6rem; }
+nav { display: flex; gap: 1.2rem; margin-top: .8rem; }
+nav a { font-size: .95rem; }
+.mail a { color: var(--ember); }

@@ -11,3 +11,7 @@
 ## My Lovely Christmas Tree
 - Support: https://meltembkr-arslan.github.io/my-lovely-christmas-tree/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/my-lovely-christmas-tree/privacy.html
+
+## The Long Night: Witch Hunter
+- Support: https://meltembkr-arslan.github.io/the-long-night-witch-hunter/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/the-long-night-witch-hunter/privacy.html

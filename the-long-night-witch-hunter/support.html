@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Long Night: Witch Hunter – Support</title>
+<meta name="description" content="Help and contact for The Long Night: Witch Hunter, a Halloween witch hunting game.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="The Long Night: Witch Hunter app icon">
+    <div class="eyebrow">Support</div>
+    <h1>The Long Night<span>WITCH HUNTER</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model and the level you were playing.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=The%20Long%20Night%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I tell a witch from a person in costume?</dt>
+        <dd>Real witches cast no shadow, float slightly above the ground and give off a faint green glow. Hold LENS (right click or F on a computer) to reveal every witch within 50 metres.</dd></div>
+      <div><dt>How do the touch controls work?</dt>
+        <dd>Drag the stick at the bottom left to walk; push it all the way to run. Swipe an empty part of the screen to look around. Use ATTACK, LENS and JUMP on the right, and ⟳ to switch tools.</dd></div>
+      <div><dt>Why are some levels locked?</dt>
+        <dd>The 10 levels open one at a time. Finish a level to unlock the next one. Your best stars are kept for every level.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the app or clearing its data resets your progress, gold and purchases from the in-game shop.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; choose Turkish under Settings &gt; Language.</dd></div>
+      <div><dt>Does the game need an internet connection?</dt>
+        <dd>No. It plays fully offline and has no ads and no account.</dd></div>
+      <div><dt>The game runs slowly on my phone.</dt>
+        <dd>Close other apps and restart the game. Phones use a lighter graphics setting automatically. If it is still slow, tell us your device model.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=The%20Long%20Night%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için <b>Ayarlar &gt; Dil</b> bölümünü kullanın. Oyun internet istemez, reklam ve hesap içermez. İlerlemeniz yalnızca cihazınızda saklanır.</p>
+  </section>
+
+  <footer>© 2026 The Long Night: Witch Hunter · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
