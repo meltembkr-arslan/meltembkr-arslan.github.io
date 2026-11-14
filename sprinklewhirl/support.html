@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprinklewhirl – Support</title>
+<meta name="description" content="Help and contact for Sprinklewhirl, a 3D cake decorating game for kids.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Sprinklewhirl app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Sprinklewhirl<span>3D CAKE STUDIO</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Sprinklewhirl%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Pick a cake shape and number of tiers, choose a frosting color, add a drizzle and a border, then pick toppings and tap the cake to place them. Spin the cake by dragging it. When you are happy, press the finish button to celebrate.</dd></div>
+      <div><dt>Why are some items locked?</dt>
+        <dd>New shapes, colors, drizzles, borders and toppings unlock as you play: every 3 cakes you decorate opens a new level. A cake counts when it has at least 3 toppings.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the app or clearing its data resets your progress.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; tap the EN button at the top to switch to Turkish.</dd></div>
+      <div><dt>Are there ads?</dt>
+        <dd>The phone and tablet versions show a short ad between some cakes. All ads are set as child-directed, are never personalized and are rated for general audiences. The Steam version has no ads.</dd></div>
+      <div><dt>Does the game need an internet connection?</dt>
+        <dd>No. You can play offline. On phones and tablets ads only appear when you are online.</dd></div>
+      <div><dt>How do I turn off the music or sounds?</dt>
+        <dd>Use the music note and speaker buttons at the top right of the screen.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Sprinklewhirl%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için üstteki <b>EN</b> düğmesine dokunun. Her 3 pastada bir yeni şekil, renk ve süsler açılır (bir pastanın sayılması için en az 3 süs gerekir). İlerlemeniz yalnızca cihazınızda saklanır. Telefon ve tablet sürümlerinde bazı pastaların arasında çocuklara uygun, kişiselleştirilmemiş kısa reklamlar gösterilir; Steam sürümünde reklam yoktur.</p>
+  </section>
+
+  <footer>© 2026 Sugar Cloud Studio · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>

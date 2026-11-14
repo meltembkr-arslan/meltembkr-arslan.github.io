@@ -15,3 +15,7 @@
 ## The Long Night: Witch Hunter
 - Support: https://meltembkr-arslan.github.io/the-long-night-witch-hunter/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/the-long-night-witch-hunter/privacy.html
+
+## Sprinklewhirl – 3D Cake Studio
+- Support: https://meltembkr-arslan.github.io/sprinklewhirl/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/sprinklewhirl/privacy.html
