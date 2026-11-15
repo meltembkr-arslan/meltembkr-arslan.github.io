@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blinkaboo – Support</title>
+<meta name="description" content="Help and contact for Blinkaboo, the cozy ghost-catching game for iPhone, iPad, Android and Steam.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Blinkaboo app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Blinkaboo<span>GHOST CATCHER</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Blinkaboo%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Ghosts blink in and out of sight. Tap or click a ghost while you can see it to catch it. Catch the number of ghosts shown at the top before the timer runs out. Faint sparkles show where an invisible ghost is floating.</dd></div>
+      <div><dt>How do I get 3 stars?</dt>
+        <dd>Finish the level, keep at least 30% of the time and hit at least 75% of your taps. Tapping empty space or the sleepy cloud lowers your accuracy.</dd></div>
+      <div><dt>How do I open the next world?</dt>
+        <dd>Beat the Grand Boo at the end of the world and collect enough stars. The map shows how many stars you need. Endless mode opens after World 1.</dd></div>
+      <div><dt>What do the power-ups do?</dt>
+        <dd>The lantern makes every ghost visible for a few seconds, frost slows the ghosts down and the big net makes catching easier. Tap a glowing orb to use it. Golden ghosts always leave one behind.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the app or clearing its data resets your progress.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; tap TR on the title screen or choose Türkçe in Settings. Your choice is remembered.</dd></div>
+      <div><dt>Are there ads or purchases?</dt>
+        <dd>No. There are no ads and no in-app purchases, and the game works offline.</dd></div>
+      <div><dt>How do I turn off the music or sounds?</dt>
+        <dd>Open Settings on the title screen, or press pause during a level.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Blinkaboo%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için başlık ekranındaki <b>TR</b> düğmesine dokunun ya da Ayarlar'dan Türkçe'yi seçin. Hayaletleri görünürken dokunarak yakalarsınız; görünmezken yerlerini küçük parıltılardan bulabilirsiniz. Yeni dünyalar, dünyanın sonundaki Koca Bö'yü yenip yeterli yıldız toplayınca açılır. Reklam ve uygulama içi satın alma yoktur, ilerlemeniz yalnızca cihazınızda saklanır.</p>
+  </section>
+
+  <footer>© 2026 Blinkaboo · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
