@@ -31,6 +31,7 @@
 ## Mustard & Rye
 - Support: https://meltembkr-arslan.github.io/mustard-and-rye/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/mustard-and-rye/privacy.html
+
 ## Blinkaboo: Ghost Catcher
 - Support: https://meltembkr-arslan.github.io/blinkaboo/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/blinkaboo/privacy.html
