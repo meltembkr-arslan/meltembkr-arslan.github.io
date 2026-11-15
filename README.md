@@ -27,3 +27,7 @@
 ## Shake & Settle
 - Support: https://meltembkr-arslan.github.io/shake-and-settle/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/shake-and-settle/privacy.html
+
+## Mustard & Rye
+- Support: https://meltembkr-arslan.github.io/mustard-and-rye/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/mustard-and-rye/privacy.html
