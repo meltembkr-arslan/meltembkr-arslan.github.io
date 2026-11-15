@@ -19,3 +19,7 @@
 ## Sprinklewhirl – 3D Cake Studio
 - Support: https://meltembkr-arslan.github.io/sprinklewhirl/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/sprinklewhirl/privacy.html
+
+## Bellhaven: A Christmas Old Town
+- Support: https://meltembkr-arslan.github.io/bellhaven/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/bellhaven/privacy.html

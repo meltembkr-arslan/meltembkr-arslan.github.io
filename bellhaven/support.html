@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bellhaven – Support</title>
+<meta name="description" content="Help and contact for Bellhaven: A Christmas Old Town, a cosy game about decorating a snowy medieval town.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Bellhaven app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Bellhaven<span>A CHRISTMAS OLD TOWN</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Bellhaven%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Pick a decoration in the bottom bar (Lights, Decor, Trees or Market), then tap a glowing spot in town to place it. Drag to move around and pinch or scroll to zoom. Settings › How to play explains everything step by step.</dd></div>
+      <div><dt>How do I open new districts?</dt>
+        <dd>Open the town map at the top left. Each district opens when you reach its level and the district before it is at least 50% festive. There are eight districts, the last one opens at level 30.</dd></div>
+      <div><dt>How do market stalls work?</dt>
+        <dd>Stalls earn coins on their own for up to 2 hours, even while the game is closed. Tap a stall to collect its coins or upgrade it.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the game or clearing its data resets your progress. Settings › Restart game starts over on purpose.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; choose Türkçe in Settings (the gear at the top right).</dd></div>
+      <div><dt>Are there ads or in-app purchases?</dt>
+        <dd>No. Bellhaven has no ads and no in-app purchases.</dd></div>
+      <div><dt>Does the game need an internet connection?</dt>
+        <dd>No. You can play completely offline.</dd></div>
+      <div><dt>How do I change the music, sounds or church bells?</dt>
+        <dd>Open Settings (the gear at the top right) and use the Music, Sound effects and Church bells sliders.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Bellhaven%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için sağ üstteki dişliden Ayarlar'ı açıp Türkçe'yi seçin. Ayarlar › Nasıl oynanır bölümü oyunu adım adım anlatır. Yeni mahalleler, ilgili seviyeye ulaşınca ve önceki mahalle en az %50 süslenince açılır. İlerlemeniz yalnızca cihazınızda saklanır. Oyunda reklam ve uygulama içi satın alma yoktur, internetsiz oynanır.</p>
+  </section>
+
+  <footer>© 2026 Bellhaven · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
