@@ -23,3 +23,7 @@
 ## Bellhaven: A Christmas Old Town
 - Support: https://meltembkr-arslan.github.io/bellhaven/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/bellhaven/privacy.html
+
+## Shake & Settle
+- Support: https://meltembkr-arslan.github.io/shake-and-settle/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/shake-and-settle/privacy.html

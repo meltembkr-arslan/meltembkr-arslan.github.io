@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shake &amp; Settle – Support</title>
+<meta name="description" content="Help and contact for Shake &amp; Settle, a cozy snow globe making game set in a tiny New York shop.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Shake &amp; Settle app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Shake <em>&amp;</em> Settle<span>A snow globe atelier</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Shake%20%26%20Settle%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Read what the customer asks for, then drag houses, trees, figures and street pieces into the globe. Drag the globe to turn it, tap a piece to rotate it and drag a piece out of the globe to remove it. Pick the base color and the snow in the Globe tab. When the order card is ticked, press Finish &amp; shake, shake the globe and hand it over.</dd></div>
+      <div><dt>How do I get three stars?</dt>
+        <dd>Two stars for doing exactly what the order says. The third star comes from the customer's little wish: listen to what they mention in passing (for example "I drove a yellow cab for thirty years") and add that piece.</dd></div>
+      <div><dt>Why are some pieces locked?</dt>
+        <dd>New pieces, bases and snow types unlock as you finish orders. New neighborhoods open when you collect enough stars.</dd></div>
+      <div><dt>What are coins for?</dt>
+        <dd>Spend them in the Workshop to decorate your shop with string lights, a clock, a radio, a neon sign and a shop cat.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the app or clearing its data resets your progress.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; tap the TR button at the top to switch to Turkish.</dd></div>
+      <div><dt>Are there ads or purchases?</dt>
+        <dd>No. There are no ads and no in-app purchases, and the game works offline.</dd></div>
+      <div><dt>How do I turn off the music or sounds?</dt>
+        <dd>Use the music button at the top of the screen, or the Music and Sounds buttons on the title screen.</dd></div>
+      <div><dt>How do I play full screen on PC?</dt>
+        <dd>Press F11 or Alt+Enter. Press Esc to leave full screen.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Shake%20%26%20Settle%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için üstteki <b>TR</b> düğmesine dokunun. Müşterinin istediği parçaları küreye sürükleyin, küreyi sürükleyerek çevirin, bir parçaya dokunarak döndürün. Üçüncü yıldız için müşterinin lafın arasında söylediği küçük dileği yakalayın. Siparişleri bitirdikçe yeni parçalar ve semtler açılır. İlerlemeniz yalnızca cihazınızda saklanır. Oyunda reklam ve uygulama içi satın alma yoktur, internetsiz çalışır.</p>
+  </section>
+  <footer>© 2026 Shake &amp; Settle · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
