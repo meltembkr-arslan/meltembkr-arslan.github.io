@@ -35,3 +35,7 @@
 ## Blinkaboo: Ghost Catcher
 - Support: https://meltembkr-arslan.github.io/blinkaboo/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/blinkaboo/privacy.html
+
+## Final Approach: Sky Mystery
+- Support: https://meltembkr-arslan.github.io/final-approach/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/final-approach/privacy.html

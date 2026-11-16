@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Final Approach – Support</title>
+<meta name="description" content="Help and contact for Final Approach: Sky Mystery, the hidden-object murder mystery on a night flight, for iPhone, iPad, Android and Steam.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Final Approach app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Final Approach<span>SKY MYSTERY</span></h1>
+    <p class="lead">A hidden-object murder mystery aboard Aurora Flight 717, New York to Istanbul. Help and contact for iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or stuck on a chapter? Write to us and we usually reply within 2 working days. Please include your device model and the chapter number.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Final%20Approach%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Each chapter takes you to a part of the plane. Tap the items in the scene that match the list at the bottom. Some items are shown only by their shape. Pinch or scroll to zoom in. After each search you get a new piece of evidence for your case file.</dd></div>
+      <div><dt>I can't find the last item.</dt>
+        <dd>Tap the magnifier Hint button. It points to one item and then recharges over time. Zooming in also helps with small items.</dd></div>
+      <div><dt>How do I get 3 stars?</dt>
+        <dd>Finish the chapter quickly, with few misclicks and at most one hint. You can replay any chapter from the Cabin Map to improve your stars.</dd></div>
+      <div><dt>How do I solve the case?</dt>
+        <dd>Read the evidence and suspect notes in the Case File. At the deduction steps choose the answer that fits the evidence. If an answer does not fit, you can simply try again. Put all the evidence together to name the killer before the plane lands.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the app or clearing its data resets your progress. You can also start over with New Case or Reset in Settings.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. Tap TR at the top of the screen or choose Türkçe in Settings. The game remembers your choice.</dd></div>
+      <div><dt>Is it suitable for children?</dt>
+        <dd>It is a murder mystery for ages 13 and up. A death by poisoning is part of the story, but nothing violent is shown.</dd></div>
+      <div><dt>Are there ads or purchases?</dt>
+        <dd>No. There are no ads and no in-app purchases, and the game works offline.</dd></div>
+      <div><dt>How do I turn off the music or sounds?</dt>
+        <dd>Open Settings on the title screen, or tap the menu button during a chapter. Music, effects and cabin ambience have separate volume controls.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Final%20Approach%20destek">meltembkr@gmail.com</a>. Türkçe oynamak için ekranın üstündeki <b>TR</b> düğmesine dokunun ya da Ayarlar'dan Türkçe'yi seçin; oyun seçiminizi hatırlar. Her bölümde sahnedeki eşyaları alttaki listeye göre bulursunuz; takılırsanız büyüteç şeklindeki İpucu düğmesini kullanın. Kanıtları Dava Dosyası'nda okuyup uçak inmeden katili bulmaya çalışın. Reklam ve uygulama içi satın alma yoktur, ilerlemeniz yalnızca cihazınızda saklanır.</p>
+  </section>
+
+  <footer>© 2026 Final Approach · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
