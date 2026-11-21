@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frostpost – Support</title>
+<meta name="description" content="Help and contact for Frostpost: Mountain Courier, a snowmobile delivery game.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Frostpost app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Frostpost<span>MOUNTAIN COURIER</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model and the level number.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Frostpost%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Your snowmobile drives on its own. At each junction, tap an arrow to choose the next road (on a computer: click it or use the arrow keys). Hold anywhere on the screen, or Space, to brake. Deliver every parcel before the timer runs out.</dd></div>
+      <div><dt>Why does my snowmobile spin out?</dt>
+        <dd>Icy curves are slippery. When a yellow or red ring appears around the sled, brake before the curve. Ice Skis in the Garage give you more grip.</dd></div>
+      <div><dt>What are the orange parcels and the mountain passes?</dt>
+        <dd>Orange parcels are Express: they have their own countdown. Mountain passes are shortcuts that close at the time shown on their sign.</dd></div>
+      <div><dt>How do I unlock new regions?</dt>
+        <dd>Each level gives up to three stars. New regions open when you have collected enough stars: 8 for Glasslake, 20 for Ironridge Pass and 34 for Whiteout Peaks.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the game or clearing its data resets your progress. Settings › Reset Progress starts over on purpose.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; tap TR in the language switch at the top right of any screen.</dd></div>
+      <div><dt>Are there ads or in-app purchases?</dt>
+        <dd>No. There are no ads and no in-app purchases, and the game works without an internet connection.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Frostpost%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için herhangi bir ekranın sağ üstündeki dil düğmesinden TR'ye dokunun. Kar motoru kendiliğinden ilerler: kavşakta yolu seçmek için oka dokunun, fren için ekrana basılı tutun. Buzlu virajlarda kızağın çevresinde sarı veya kırmızı halka çıkarsa frenleyin. Turuncu paketler ekspres teslimattır, dağ geçitleri tabelasındaki saatte kapanır. Yeni bölgeler yıldız toplayarak açılır. İlerlemeniz yalnızca cihazınızda saklanır. Oyunda reklam ve uygulama içi satın alma yoktur, internetsiz oynanır.</p>
+  </section>
+
+  <footer>© 2026 Frostpost · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
