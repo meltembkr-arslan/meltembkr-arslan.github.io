@@ -39,3 +39,7 @@
 ## Final Approach: Sky Mystery
 - Support: https://meltembkr-arslan.github.io/final-approach/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/final-approach/privacy.html
+
+## Frostpost: Mountain Courier
+- Support: https://meltembkr-arslan.github.io/frostpost/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/frostpost/privacy.html
