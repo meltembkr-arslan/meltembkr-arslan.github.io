@@ -50,6 +50,7 @@
 - Privacy Policy: https://meltembkr-arslan.github.io/lampwick-lane/privacy.html
 
 ## Pairwander
+- Support: https://meltembkr-arslan.github.io/pairwander/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/pairwander/privacy.html
 
 ## Nine Lanterns: A Sudoku Journey
