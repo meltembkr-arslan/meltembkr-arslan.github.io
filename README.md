@@ -61,3 +61,7 @@
 
 ## Rillway
 - Privacy Policy: https://meltembkr-arslan.github.io/rillway/privacy.html
+
+## Gleamstead: Clean & Restore
+- Support: https://meltembkr-arslan.github.io/gleamstead/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/gleamstead/privacy.html
