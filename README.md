@@ -58,3 +58,6 @@
 ## Alpenza: Alpine Pizza Tycoon
 - Support: https://meltembkr-arslan.github.io/alpenza/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/alpenza/privacy.html
+
+## Rillway
+- Privacy Policy: https://meltembkr-arslan.github.io/rillway/privacy.html
