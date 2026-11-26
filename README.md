@@ -81,3 +81,6 @@
 
 ## Gemlume Valentine
 - Privacy Policy: https://meltembkr-arslan.github.io/gemlume-valentine/privacy.html
+
+## Curbslide
+- Privacy Policy: https://meltembkr-arslan.github.io/curbslide/privacy.html
