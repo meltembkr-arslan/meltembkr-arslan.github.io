@@ -78,3 +78,6 @@
 
 ## Conefetti: Ice Cream Parlor
 - Privacy Policy: https://meltembkr-arslan.github.io/conefetti/privacy.html
+
+## Reefwright
+- Privacy Policy: https://meltembkr-arslan.github.io/reefwright/privacy.html
