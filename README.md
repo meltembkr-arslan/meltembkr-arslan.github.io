@@ -1,5 +1,8 @@
 # Web pages for Meltem's games
 
+## Brooklyn Wrench
+- Privacy Policy: https://meltembkr-arslan.github.io/brooklyn-wrench/privacy.html
+
 ## The North Village
 - Support: https://meltembkr-arslan.github.io/the-north-village/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/the-north-village/privacy.html
