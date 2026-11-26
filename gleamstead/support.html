@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gleamstead – Support</title>
+<meta name="description" content="Help and contact for Gleamstead: Clean &amp; Restore, a cozy game about cleaning and restoring houses room by room.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Gleamstead app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Gleamstead<span>Clean &amp; Restore</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Gleamstead%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>With the Sponge selected (bottom left), drag across dirt to scrub it away; dark stains need a few extra passes. Tap Hand to put the sponge down, then drag each item onto its glowing spot and toss trash into the green bin. A room is restored when it is clean and tidy.</dd></div>
+      <div><dt>How do new rooms and houses unlock?</dt>
+        <dd>Each restored room unlocks the next one. When every room of a house is restored, a bigger house opens: 3, 5, 7, 9 and finally 12 rooms, followed by endless Renovation Contracts. Open My Houses to replay any restored room for more stars.</dd></div>
+      <div><dt>What do Hint and Super Sponge do?</dt>
+        <dd>Hint shows where one item belongs. Super Sponge makes your sponge bigger and stronger for 12 seconds. They cost coins; on phones and tablets you can also watch a short video to use one for free.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the game or clearing its data resets your progress.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; tap the EN button on the main menu or in the top bar while playing to switch to Türkçe.</dd></div>
+      <div><dt>How do I turn the music off?</dt>
+        <dd>Tap the music note at the top right while playing, or Music on the main menu. Sound effects have their own switch on the main menu and in the pause menu.</dd></div>
+      <div><dt>Are there ads or in-app purchases?</dt>
+        <dd>There are no in-app purchases. The phone and tablet versions show an ad now and then between rooms, and you can choose to watch short videos for extra coins or free boosters. The Steam version has no ads.</dd></div>
+      <div><dt>Does the game need an internet connection?</dt>
+        <dd>No. You can play offline; on phones and tablets ads only appear when you are online.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Gleamstead%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için ana menüdeki veya oyun ekranının üst çubuğundaki EN butonuna dokunun. Sol alttaki Sünger seçiliyken kirin üzerinde sürükleyerek silin; El'e dokunup eşyaları parlayan yerlerine sürükleyin, çöpleri yeşil kovaya atın. Her yenilenen oda bir sonrakini açar; bir ev bitince daha büyüğü açılır. Müziği oyun ekranında sağ üstteki nota simgesinden kapatabilirsiniz. İlerlemeniz yalnızca cihazınızda saklanır. Uygulama içi satın alma yoktur. Telefon ve tablet sürümlerinde odalar arasında ara sıra reklam gösterilir, ekstra altın veya ücretsiz güçlendirici için isteğe bağlı video izleyebilirsiniz; Steam sürümü reklamsızdır. Oyun internetsiz oynanır.</p>
+  </section>
+
+  <footer>© 2026 Gleamstead · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>

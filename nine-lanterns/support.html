@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nine Lanterns – Support</title>
+<meta name="description" content="Help and contact for Nine Lanterns: A Sudoku Journey, a calm sudoku game with 270 puzzles in nine chapters.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Nine Lanterns app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Nine Lanterns<span>A SUDOKU JOURNEY</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Nine%20Lanterns%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I open new chapters and levels?</dt>
+        <dd>Levels open one by one as you solve them. A new chapter opens when you have solved 20 of the 30 puzzles in the chapter before it. There are nine chapters and 270 puzzles in all.</dd></div>
+      <div><dt>How are stars earned?</dt>
+        <dd>Each puzzle gives up to 3 stars depending on your mistakes and hints. You can replay any solved puzzle to earn more.</dd></div>
+      <div><dt>What is the Daily Puzzle?</dt>
+        <dd>A new puzzle every day. Solve it on consecutive days to build your streak.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device, automatically. Deleting the game or clearing its data resets your progress.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; tap the language button on the main menu or the game screen to switch to Türkçe.</dd></div>
+      <div><dt>How do I turn the music off?</dt>
+        <dd>Tap the music button on the game screen, or use the Music settings. Sound effects have their own switch in Settings.</dd></div>
+      <div><dt>Can I turn off the mistake limit or the timer?</dt>
+        <dd>Yes. Both are options in Settings.</dd></div>
+      <div><dt>Are there ads or in-app purchases?</dt>
+        <dd>There are no in-app purchases. The phone and tablet versions show an ad now and then between puzzles, and you can choose to watch a short video for an extra hint or to continue after three mistakes. The Steam version has no ads.</dd></div>
+      <div><dt>Does the game need an internet connection?</dt>
+        <dd>No. You can play offline; on phones and tablets ads only appear when you are online.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Nine%20Lanterns%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için ana menüdeki veya oyun ekranındaki dil düğmesine dokunun. Seviyeler çözdükçe sırayla açılır; yeni bölüm, önceki bölümdeki 30 bulmacanın 20'si çözülünce açılır. Her bulmaca hata ve ipucu sayısına göre 3 yıldıza kadar kazandırır. Günün Bulmacası her gün yenilenir. İlerlemeniz otomatik olarak yalnızca cihazınızda saklanır. Müziği oyun ekranındaki müzik düğmesiyle kapatabilirsiniz; hata sınırı ve süre Ayarlar'dan kapatılabilir. Uygulama içi satın alma yoktur. Telefon ve tablet sürümlerinde bulmacalar arasında ara sıra reklam gösterilir; ekstra ipucu veya üç hatadan sonra devam etmek için isteğe bağlı video izleyebilirsiniz. Steam sürümü reklamsızdır. Oyun internetsiz oynanır.</p>
+  </section>
+  <footer>© 2026 Nine Lanterns · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>

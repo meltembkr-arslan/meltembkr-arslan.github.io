@@ -40,6 +40,32 @@
 - Support: https://meltembkr-arslan.github.io/final-approach/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/final-approach/privacy.html
 
+## Nautilight: Into the Deep
+- Privacy Policy: https://meltembkr-arslan.github.io/nautilight/privacy.html
+
+## Lampwick Lane: The Night Watch
+- Privacy Policy: https://meltembkr-arslan.github.io/lampwick-lane/privacy.html
+
+## Pairwander
+- Privacy Policy: https://meltembkr-arslan.github.io/pairwander/privacy.html
+
+## Nine Lanterns: A Sudoku Journey
+- Support: https://meltembkr-arslan.github.io/nine-lanterns/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/nine-lanterns/privacy.html
+## Sunbed Story
+- Privacy Policy: https://meltembkr-arslan.github.io/sunbed-story/privacy.html
+
+## Alpenza: Alpine Pizza Tycoon
+- Support: https://meltembkr-arslan.github.io/alpenza/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/alpenza/privacy.html
+
+## Rillway
+- Privacy Policy: https://meltembkr-arslan.github.io/rillway/privacy.html
+
+## Gleamstead: Clean & Restore
+- Support: https://meltembkr-arslan.github.io/gleamstead/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/gleamstead/privacy.html
+
 ## Quench Crew
 - Support: https://meltembkr-arslan.github.io/quench-crew/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/quench-crew/privacy.html

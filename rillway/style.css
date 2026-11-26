@@ -1,0 +1,32 @@
+:root {
+  --bg: #eef8f1; --panel: #ffffff; --line: #cfe6d8; --ink: #123a30; --muted: #4f6f64;
+  --brand: #1f7a62; --brand-soft: #dcf2e4; --accent: #b07a00;
+  --body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d2620; --panel: #143229; --line: #24493d; --ink: #eef8f1; --muted: #a9c8bc;
+    --brand: #9fe3b0; --brand-soft: #1a3d32; --accent: #ffcf4a; color-scheme: dark; }
+}
+html, body { background: var(--bg); }
+body { color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 40rem; margin: 0 auto; padding-block: 3rem 4rem; display: flex; flex-direction: column; gap: 2.5rem; }
+header { display: flex; flex-direction: column; gap: .3rem; border-bottom: 2px dashed var(--line); padding-bottom: 2rem;
+  background: radial-gradient(circle at 90% 0%, rgba(159,227,176,.25), rgba(0,0,0,0) 45%); }
+header img { width: 96px; height: 96px; border-radius: 22px; margin-bottom: .6rem; box-shadow: 0 6px 18px rgba(10,40,30,.3); }
+.eyebrow { font-size: .8rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1 { font-weight: 800; font-size: clamp(2.3rem, 8vw, 3.4rem); line-height: 1; margin: 0; color: var(--brand); }
+h1 span { display: block; font-size: .38em; font-weight: 700; color: var(--muted); letter-spacing: .25em; margin-top: .5rem; }
+h2 { font-weight: 800; font-size: 1.6rem; line-height: 1.2; margin: 0 0 .8rem; text-wrap: balance; }
+h3 { font-size: 1rem; font-weight: 800; margin: 1.2rem 0 .3rem; }
+p { margin: 0 0 .8rem; }
+section { display: flex; flex-direction: column; }
+a { color: var(--brand); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+ul { margin: 0 0 .8rem; padding-left: 1.2rem; }
+li { margin-bottom: .3rem; }
+.small { font-size: .9rem; color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: .8rem; }
+nav a { font-weight: 800; }
+footer { border-top: 2px dashed var(--line); padding-top: 1.2rem; font-size: .9rem; color: var(--muted); }
