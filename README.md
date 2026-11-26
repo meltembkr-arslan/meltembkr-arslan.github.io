@@ -72,3 +72,6 @@
 ## Quench Crew
 - Support: https://meltembkr-arslan.github.io/quench-crew/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/quench-crew/privacy.html
+
+## Conefetti: Ice Cream Parlor
+- Privacy Policy: https://meltembkr-arslan.github.io/conefetti/privacy.html
