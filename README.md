@@ -42,3 +42,6 @@
 
 ## Nautilight: Into the Deep
 - Privacy Policy: https://meltembkr-arslan.github.io/nautilight/privacy.html
+
+## Lampwick Lane: The Night Watch
+- Privacy Policy: https://meltembkr-arslan.github.io/lampwick-lane/privacy.html
