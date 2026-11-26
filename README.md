@@ -69,6 +69,9 @@
 - Support: https://meltembkr-arslan.github.io/gleamstead/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/gleamstead/privacy.html
 
+## Pinedusk
+- Privacy Policy: https://meltembkr-arslan.github.io/pinedusk/privacy.html
+
 ## Quench Crew
 - Support: https://meltembkr-arslan.github.io/quench-crew/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/quench-crew/privacy.html
