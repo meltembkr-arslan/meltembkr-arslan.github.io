@@ -39,3 +39,6 @@
 ## Final Approach: Sky Mystery
 - Support: https://meltembkr-arslan.github.io/final-approach/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/final-approach/privacy.html
+
+## Nautilight: Into the Deep
+- Privacy Policy: https://meltembkr-arslan.github.io/nautilight/privacy.html
