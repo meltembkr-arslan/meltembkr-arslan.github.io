@@ -48,3 +48,7 @@
 
 ## Pairwander
 - Privacy Policy: https://meltembkr-arslan.github.io/pairwander/privacy.html
+
+## Nine Lanterns: A Sudoku Journey
+- Support: https://meltembkr-arslan.github.io/nine-lanterns/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/nine-lanterns/privacy.html
