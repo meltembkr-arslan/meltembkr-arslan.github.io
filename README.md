@@ -54,3 +54,7 @@
 - Privacy Policy: https://meltembkr-arslan.github.io/nine-lanterns/privacy.html
 ## Sunbed Story
 - Privacy Policy: https://meltembkr-arslan.github.io/sunbed-story/privacy.html
+
+## Alpenza: Alpine Pizza Tycoon
+- Support: https://meltembkr-arslan.github.io/alpenza/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/alpenza/privacy.html
