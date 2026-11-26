@@ -79,5 +79,11 @@
 ## Conefetti: Ice Cream Parlor
 - Privacy Policy: https://meltembkr-arslan.github.io/conefetti/privacy.html
 
+## Gemlume Valentine
+- Privacy Policy: https://meltembkr-arslan.github.io/gemlume-valentine/privacy.html
+
+## Curbslide
+- Privacy Policy: https://meltembkr-arslan.github.io/curbslide/privacy.html
+
 ## Reefwright
 - Privacy Policy: https://meltembkr-arslan.github.io/reefwright/privacy.html
