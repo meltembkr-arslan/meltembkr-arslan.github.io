@@ -45,3 +45,6 @@
 
 ## Lampwick Lane: The Night Watch
 - Privacy Policy: https://meltembkr-arslan.github.io/lampwick-lane/privacy.html
+
+## Pairwander
+- Privacy Policy: https://meltembkr-arslan.github.io/pairwander/privacy.html
