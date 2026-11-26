@@ -39,3 +39,7 @@
 ## Final Approach: Sky Mystery
 - Support: https://meltembkr-arslan.github.io/final-approach/support.html
 - Privacy Policy: https://meltembkr-arslan.github.io/final-approach/privacy.html
+
+## Quench Crew
+- Support: https://meltembkr-arslan.github.io/quench-crew/support.html
+- Privacy Policy: https://meltembkr-arslan.github.io/quench-crew/privacy.html

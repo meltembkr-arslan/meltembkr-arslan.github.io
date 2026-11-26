@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quench Crew – Support</title>
+<meta name="description" content="Help and contact for Quench Crew, the firefighting mission game for iPhone, iPad, Android and Steam.">
+<link rel="icon" href="icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon-256.png" alt="Quench Crew app icon">
+    <div class="eyebrow">Support</div>
+    <h1>Quench Crew<span>FIREFIGHTER MISSIONS</span></h1>
+    <p class="lead">Help and contact for the game on iPhone, iPad, Android and Steam.</p>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="#turkce">Türkçe</a></nav>
+  </header>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Found a bug or have a question? Write to us and we usually reply within 2 working days. Please include your device model.</p>
+      <div class="mail" id="mail"><a href="mailto:meltembkr@gmail.com?subject=Quench%20Crew%20support">meltembkr@gmail.com</a></div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <dl>
+      <div><dt>How do I play?</dt>
+        <dd>Drive your fire engine to the scene, spray water on the flames and rescue anyone trapped before the timer runs out. Fires you leave alone grow and spread, so choose which blaze to fight first.</dd></div>
+      <div><dt>How do I unlock new districts?</dt>
+        <dd>There are 40 missions in 5 districts. Finish missions and earn stars to open the next ones. Every district ends with a boss mission.</dd></div>
+      <div><dt>What are coins for?</dt>
+        <dd>Spend them in the garage to upgrade your fire engine, such as a bigger tank, a stronger hose or a faster truck.</dd></div>
+      <div><dt>Where is my progress saved?</dt>
+        <dd>Only on your device. Deleting the app or clearing its data resets your progress.</dd></div>
+      <div><dt>Can I play in Turkish?</dt>
+        <dd>Yes. The game opens in English; choose Türkçe on the main menu or in the in-game menu.</dd></div>
+      <div><dt>Are there ads or purchases?</dt>
+        <dd>There are no in-app purchases. The free Android and iOS versions show ads: optional videos you can watch for extra coins, and from mission 4 onwards a short ad after every third mission, never during play. The Steam version has no ads and works offline.</dd></div>
+      <div><dt>How do I turn off the music?</dt>
+        <dd>Tap the music button, which is always visible during a mission and on the main menu.</dd></div>
+    </dl>
+  </section>
+  <section id="turkce" lang="tr">
+    <h2>Türkçe destek</h2>
+    <p>Sorularınız ve hata bildirimleri için bize e-posta ile yazabilirsiniz: <a href="mailto:meltembkr@gmail.com?subject=Quench%20Crew%20destek">meltembkr@gmail.com</a>. Oyun İngilizce açılır; Türkçe için ana menüden ya da oyun içi menüden Türkçe'yi seçin. İtfaiye aracınızla olay yerine gidin, süre bitmeden alevleri söndürün ve mahsur kalanları kurtarın; söndürülmeyen yangınlar büyür ve yayılır. 5 bölgede 40 görev vardır; altınlarla garajda aracınızı geliştirebilirsiniz. Uygulama içi satın alma yoktur. Ücretsiz Android ve iOS sürümlerinde reklam vardır: ek altın için isteğe bağlı videolar ve 4. görevden sonra her üç görevde bir, asla oyun sırasında olmamak üzere kısa reklam. Steam sürümü reklamsızdır. İlerlemeniz yalnızca cihazınızda saklanır.</p>
+  </section>
+
+  <footer>© 2026 Quench Crew · <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var t = document.getElementById('mail').textContent.trim(), b = this;
+  var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy address'; }, 1600); };
+  var sel = function () { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Copy'; };
+  try { navigator.clipboard.writeText(t).then(done, sel); } catch (e) { sel(); }
+});
+</script>
+</body>
+</html>
